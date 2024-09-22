@@ -41,7 +41,7 @@ def haversine_distance(lat1, lon1, lat2, lon2):
 
 # Function to fetch current weather data for a given latitude and longitude
 def fetch_weather_data(lat, lon):
-    api_key = '18b83575f644151d64d8b8b07f2957d9'  # Your actual API key
+    api_key = ''  # Your actual API key
     url = f'http://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={api_key}&units=metric'
     response = requests.get(url)
     if response.status_code == 200:
